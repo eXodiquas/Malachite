@@ -8,4 +8,6 @@
   :serial t
   :depends-on ("trivial-gamekit")
   :components ((:file "package")
-               (:file "malachite")))
+               (:file "malachite")
+               (:file "scene")))
+  
