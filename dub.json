@@ -3,6 +3,13 @@
 		"Timo Netzer"
 	],
 	"copyright": "Copyright © 2021, Timo Netzer",
+	"dependencies": {
+		"bindbc-sdl": "~>0.19.2"
+	},
+    "versions": [
+        "SDL_Image",
+        "SDL_TTF"
+    ],
 	"description": "Malachite is an open source 2D point and click adventure engine.",
 	"license": "MIT",
 	"name": "malachite"
