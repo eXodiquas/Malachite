@@ -1,0 +1,12 @@
+{
+	"authors": [
+		"Exodiquas"
+	],
+	"copyright": "Copyright © 2021, Exodiquas",
+	"dependencies": {
+		"dsfml": "~>2.1.1"
+	},
+	"description": "A minimal D application.",
+	"license": "proprietary",
+	"name": "dsfmltest"
+}
