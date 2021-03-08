@@ -1,3 +1,6 @@
+import std.algorithm;
+import std.array;
+
 import dsfml.graphics;
 import dsfml.graphics.drawable;
 
@@ -23,6 +26,16 @@ class Scene : Drawable
 
   public void add_actor(Actor actor) {
     this.actors ~= actor;
+  }
+
+  public Actor[] get_actors()
+  {
+    return this.actors;
+  }
+
+  public Actor get_player()
+  {
+    return this.actors.filter!(x => typeof(x).stringof == "Player").array[0];
   }
   
   override void draw(RenderTarget target, RenderStates states)
