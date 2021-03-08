@@ -1,10 +1,12 @@
-module main;
-
 import dsfml.graphics;
+import scene;
+import actor;
 
 void main(string[] args)
 {
-    auto window = new RenderWindow(VideoMode(800,600),"Malachite Test Game!");
+    auto window = new RenderWindow(VideoMode(1280,720),"Malachite Test Game!");
+    Scene s = new Scene("Marketplace", "assets/default720.png");
+    s.add_actor(new Actor("Kerle", "assets/person.png"));
 
     // Game loop
     while (window.isOpen())
@@ -21,6 +23,7 @@ void main(string[] args)
 
 	// Clear and display again
         window.clear();
+	window.draw(s);
         window.display();
     }
 }
